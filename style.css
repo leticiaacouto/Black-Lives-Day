@@ -1,0 +1,246 @@
+@charset "utf-8";
+@font-face {
+    font-family: font;
+    src: url(font/The\ Dark\ Titan\ Classic.otf );   
+}
+@font-face {
+    font-family: font1;
+    src: url(font/AppleGaramond-Light.ttf );   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 222, 159, 0.884);
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Young Serif', serif;
+   
+}
+
+footer{
+    font-family: font1;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1px;
+    }
+
+.main-header{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Young Serif', serif;
+    
+    
+}
+
+
+.main-header h1{
+    font-size: 4em;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    
+}
+
+.main-header h1 span{
+    color: #e7960b;
+}
+
+
+
+img{
+    width: 100%;
+}
+.main-header h1{
+    position: relative;
+    display: inline-block;
+    padding: 4px 0;
+   /*  font-size:1em;
+    font-family: 'Concert One', sans-serif; */
+    font-family: 'Crimson Text', serif;
+    color: #291d08;
+    text-decoration: none;
+    transition: 0.5s;
+    }
+    .main-header h1 ::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #aa761c;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    }
+    .main-header h1  :hover {
+    color: #856d39;
+    }
+    .main-header h1 :hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    }
+h3{
+    margin-top: 35px;
+    margin-left: 145px;
+    font-family: font;
+}
+p{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-family: font1;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-bottom: 5em;
+    background-color: rgb(240, 190, 96);
+    text-align: justify;
+   
+    
+   
+}
+
+.card h3{
+    margin-bottom: 2em;
+    
+    
+}
+
+.card img{
+    height: 400px;
+    border-radius: 3px;
+}
+
+.card:nth-child(even) img{
+    order: 2
+}
+
+a{
+    color: #9b9b9b;
+    text-decoration: none;
+    
+}
+
+.btn{
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    padding: 0.8em 1.8em;
+    margin-top: 2em;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.mes{
+     margin: 2em;
+     display: flex;
+     height: 20em;
+     gap: 1em;
+     
+     
+}
+
+.mes div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+    flex: 1;
+    transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 15px;
+}
+
+
+.mes div:hover{
+    flex: 4;
+     
+}
+
+.mes:hover div:not(:hover){
+    filter: grayscale(1) blur(1.5px) sepia(50%) saturate(15%);
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    
+
+}
+
+main{
+    display: block;
+    background-color: rgb(56, 39, 17);
+}
+
+.btn{
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    padding: 0.8em 1.8em;
+    margin-top: 2em;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+
+.data{
+    margin: 2em;
+    display: flex;
+    height: 30em;
+    gap: 1em;
+   
+    
+}
+
+.data div{
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background-position: 100%; */
+   flex: 1;
+   transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+   border-radius: 20px;
+   filter: grayscale(1) /* blur(0.9px) */  sepia(50%) saturate(15%);
+}
+
+
+.data div:hover{
+   flex: 4;
+   border-radius: 1.2px; 
+   /* background: url(); */
+   filter: none;
+   
+}
+
+.data:hover div:not(:hover){
+  
+   background-color: #ffffff;
+   
+  
+   
+}
+
+
+
